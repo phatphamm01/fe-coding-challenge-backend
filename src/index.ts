@@ -1,6 +1,6 @@
+import app from './app';
 import * as dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import app from './src/app';
 
 dotenv.config();
 
@@ -8,7 +8,7 @@ mongoose
   //@ts-ignore
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
   })
   .then(() => {
     console.log('Database connected');
