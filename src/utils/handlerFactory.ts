@@ -34,7 +34,9 @@ const updateOne = (Model) =>
 
 const createOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const doc = await Model.create(req.body);
+    console.log(req.body);
+
+    const doc = await Model.create({ ...req.body });
 
     res.status(201).json({
       success: true,

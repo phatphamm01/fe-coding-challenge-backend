@@ -4,10 +4,8 @@ mongoose.Promise = global.Promise;
 
 const webPageSchema = new mongoose.Schema(
   {
-    _id: mongoose.Schema.Types.ObjectId,
     json: {
-      type: String,
-      required: true
+      type: String
     }
   },
   { timestamps: true }
