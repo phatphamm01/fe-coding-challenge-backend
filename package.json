@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "build": "tsc --build && tspath -f",
-    "start": "node build/index.js"
+    "build": "tsc --build && tspath -f && node build/index.js"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
