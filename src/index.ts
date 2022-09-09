@@ -6,10 +6,11 @@ dotenv.config();
 
 mongoose
   //@ts-ignore
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+  // bug deploy
+  .connect(
+    'mongodb+srv://phatphamm01:.Phatphamm01@cluster0.reyxgu7.mongodb.net/web-builder',
+    {}
+  )
   .then(() => {
     console.log('Database connected');
   })
