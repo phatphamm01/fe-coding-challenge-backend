@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6", "es2018", "dom"],
+    "allowJs": true,
+    "outDir": "build",
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/controllers": ["./src/controllers/"],
+      "@/controllers/*": ["./src/controllers/*"],
+      "@/models": ["./src/models/"],
+      "@/models/*": ["./src/models/*"],
+      "@/routes": ["./src/routes/"],
+      "@/routes/*": ["./src/routes/*"],
+      "@/utils": ["./src/utils/"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+  }
+}
