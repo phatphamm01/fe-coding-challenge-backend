@@ -1,6 +1,5 @@
+import * as webPageControllers from '../controllers/webPage';
 import express from 'express';
-
-import * as webPageControllers from '@/controllers/webPage';
 
 const webPageRouter = express.Router();
 

@@ -1,6 +1,5 @@
-import handlerFactory from '@/utils/handlerFactory';
-
-import { WebPageModel } from '@/models/webPage';
+import { WebPageModel } from '../../models/webPage';
+import handlerFactory from '../../utils/handlerFactory';
 
 export const get = handlerFactory.getOne(WebPageModel, {});
 export const getAll = handlerFactory.getAll(WebPageModel);

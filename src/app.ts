@@ -1,11 +1,9 @@
+import webPageRouter from './routes/webPage.routes';
+import AppError from './utils/AppError.utils';
 import bodyParser from 'body-parser';
 import express from 'express';
 import ExpressMongoSanitize from 'express-mongo-sanitize';
 import logger from 'morgan';
-
-import AppError from '@/utils/AppError.utils';
-
-import webPageRouter from '@/routes/webPage.routes';
 
 const app = express();
 
