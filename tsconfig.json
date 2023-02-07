@@ -10,5 +10,7 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "baseUrl": "./"
-  }
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["src/**/*", "@types/**/*"]
 }

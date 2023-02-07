@@ -5,8 +5,8 @@ import mongoose from 'mongoose';
 dotenv.config();
 
 mongoose
+  .set('strictQuery', false)
   //@ts-ignore
-  // bug deploy
   .connect(
     'mongodb+srv://phatphamm01:.Phatphamm01@cluster0.reyxgu7.mongodb.net/web-builder',
     {}
@@ -15,10 +15,10 @@ mongoose
     console.log('Database connected');
   })
   .catch((error) => {
-    console.log('Error connecting to database');
+    console.log('Error connecting to database', error);
   });
 
-const port = 5000;
+const port = 5001;
 
 app.listen(port, () => {
   console.log(`Our server is running on port http://localhost:${port}`);
